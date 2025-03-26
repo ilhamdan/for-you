@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pesan Istimewa </title>
+    <meta name="author" content="Ilham Dani">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;700&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div class="moon"></div>
+    <div class="container">
+        <h1 class="romantic-title">Selamat Idul Fitri🌙</h1>
+        <h1 class="romantic-title">untuk Annisa Fitriani ✨</h1>
+        <p class="intro elegant-text">Ada pesan istimewa untukmu di hari yang suci ini...</p>
+
+        <div id="step1">
+            <p class="message elegant-text" id="greetingMessage">Mohon maaf lahir dan batin🌸✨</p>
+            <button class="button button-text" onclick="nextStep(1)">Lanjutkan</button>
+        </div>
+
+        <div id="step2" class="hidden">
+            <p class="confession handwritten">Di bulan suci ini, aku ingin menyampaikan sesuatu...</p>
+            <button class="button button-text" onclick="nextStep(2)">Apa itu?</button>
+        </div>
+
+        <div id="step3" class="hidden">
+            <p class="confession handwritten">Aku melihat cahaya dalam dirimu yang tak pernah pudar dari ingatanku...</p>
+            <button class="button button-text" onclick="nextStep(3)">Lanjutkan</button>
+        </div>
+
+        <div id="step4" class="hidden">
+            <p class="confession handwritten">Kau adalah alasan aku percaya bahwa cinta sejati itu ada - maukah kita buktikan bersama?, Aku berjanji akan menyayangimu dengan tulus</p>
+            <p class="confession handwritten">Annisa, maukah kamu menjadi kekasihku?</p>
+            <div class="response-buttons" id="responseButtons">
+                <button class="button button-text" onclick="chooseResponse(true)">Ya, Aku Mau!</button>
+                <button class="button button-secondary button-text" onclick="chooseResponse(false)">Aku Butuh Waktu</button>
+            </div>
+            <button class="button button-text" id="showResponseBtn" onclick="showResponseButtons()">Jawab</button>
+        </div>
+
+        <div id="positiveResponse" class="hidden">
+            <p class="confession handwritten">💖 Alhamdulillah! 💖</p>
+            <p class="confession handwritten">Inilah hari terindah dalam hidupku</p>
+            <p class="confession handwritten">Aku berjanji akan membuatmu bahagia</p>
+            <button id="whatsappButtonYa" class="whatsapp-button button-text">
+                <i class="fab fa-whatsapp"></i> Kirim Pesan Cintaku
+            </button>
+            <button class="button button-text" onclick="location.reload()">Ulangi Pesan</button>
+        </div>
+
+        <div id="neutralResponse" class="hidden">
+            <p class="confession handwritten">Aku mengerti dan menghargai perasaanmu</p>
+            <p class="confession handwritten">Aku akan menunggu dengan sabar</p>
+            <p class="confession handwritten">Yang penting kau tahu perasaanku yang tulus</p>
+            <button id="whatsappButtonTidak" class="whatsapp-button button-text">
+                <i class="fab fa-whatsapp"></i> Kirim Pesan Harapanku
+            </button>
+            <button class="button button-text" onclick="location.reload()">Ulangi Pesan</button>
+        </div>
+    </div>
+
+    <div class="creator-credit">Dibuat dengan ❤️ oleh Ilham Dani</div>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
